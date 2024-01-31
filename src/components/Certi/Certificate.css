@@ -1,0 +1,167 @@
+:root {
+  --c1: #e5efc1;
+  --c2: #a2dfab;
+  --c3: #39a3a9;
+  --c4: #557b83;
+}
+
+.certificate-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: 100px;
+}
+
+.certificate-item {
+  background-color: #04060d;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #61dce2;
+  border: 1px solid var(--c4);
+}
+
+.certificate-item:hover {
+  color: white;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 15px blue;
+}
+
+@media only screen and (max-width: 768px) {
+  .certificate-container {
+    margin-top: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    margin-top: 0px;
+  }}
+
+  .ch {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #b4c5e4;
+  }
+  
+  .BH {
+    color: #b4c5e4;
+    opacity: 0.8;
+    text-align: left;
+    padding-left: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  .bootcamp-section {
+    flex: 1 0 45%;
+  }
+  
+  .bootcamp-title,
+  .hackathon-title {
+    color: #b4c5e4;
+    opacity: 0.8;
+    text-align: left;
+    padding-left: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .hackathon-title {
+    padding-left: 0;
+  }
+  
+
+  .certificate-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .certificate-modal-content {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    height: 50vh;
+    margin: 0;
+    background-color: transparent;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  @media screen and (max-width : 687px) {
+    .certificate-modal-content {
+      margin: 2rem;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-height : 1024px) {
+    .certificate-modal-content {
+      margin: 5rem;
+      height: auto;
+    }
+  }
+
+  
+  @media screen and (max-width : 468px) {
+    .certificate-modal-content {
+      margin: 1rem;
+      height: auto;
+    }
+  }
+  
+  .certificate-modal-content img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    max-height: 100%; /* Ensure the image doesn't exceed the height of its container */
+    width: auto; /* Allow the width to adjust based on the container size */
+    height: auto; /* Allow the height to adjust based on the container size */
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: relative;
+    color: #fff;
+    top: 0rem;
+    right: 0rem;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  body.modal-open {
+    overflow: hidden; /* Disable scrolling when modal is open */
+  }
+  
+  .blur-background {
+    filter: blur(3px); /* Apply blur effect to background content */
+  }
+  
+
+  .mainbtn{
+    transform: scale(1.5);
+    border: 3px solid white;
+    padding: 0px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .mainbtn:hover{
+    border-color: gray;
+    color: gray;
+  }
+
+  .loading-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+  }

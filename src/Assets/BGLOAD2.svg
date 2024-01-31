@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="450" height="450">
+    <style>
+      .neon-circle {
+        stroke: #fff;
+        stroke-width: 4;
+        opacity: 0.5;
+        fill: none;
+        animation: neon-glow 1.5s infinite alternate;
+      }
+  
+      @keyframes neon-glow {
+        from {
+          stroke: #0ff;
+          filter: drop-shadow(0 0 5px #0ff);
+        }
+        to {
+          stroke: #00f;
+          filter: drop-shadow(0 0 10px #00f);
+        }
+      }
+    </style>
+    <circle class="neon-circle" cx="50%" cy="50%" r="10"></circle>
+</svg>
+  
