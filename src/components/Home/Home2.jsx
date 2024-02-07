@@ -27,7 +27,7 @@ function Home2() {
             </h1>
 
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              passion driven individual possessing a solid foundation in <b className="purple">web develeopment</b> . 
+              Passion driven individual possessing a solid foundation in <b className="purple">Web develeopment</b> . 
               <br />
               <br />
               
@@ -38,7 +38,7 @@ function Home2() {
               <br />
               
               Alongwith, I also practice
-              <b className="purple"> Modern Javascript library </b>
+              <b className="purple"> Modern javascript library </b>
               and frameworks like
               <b className="purple"> React JS </b>
               for developing products. <b className="purple"></b>
