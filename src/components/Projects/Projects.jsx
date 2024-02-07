@@ -28,7 +28,7 @@ function Projects() {
               imgPath={SFS}
               isBlog={false}
               title="Secure file storage system"
-              description="Secure storage system build with Pytho-Flask, Firebase, HTML/CSS/JS. It is a webApp which is using hybrid cryptography algorithm (AES + DES) to store the confidential file securely, allow PDFs, Image, Audio and Video Files."
+              description="Secure storage system built with Pytho-Flask, Firebase, HTML/CSS/JS, is a webApp which is using hybrid cryptography algorithm (AES + DES) to store the confidential file securely, allow PDFs, Image, Audio and Video Files."
               ghLink="https://github.com/AR2905/Secure_Storage_System"
             />
           </Col>
@@ -38,7 +38,7 @@ function Projects() {
               imgPath={Di}
               isBlog={false}
               title="Digital Inventory"
-              description="The CPC Inventory Management System, using HTML/CSS, JavaScript, and PHP, efficiently manages product inventory for the Central Police Canteen. It simplifies administration tasks and provides customers with an easy-to-use interface for browsing products and placing orders.
+              description="The CPC(Central Police Canteen) Inventory Management System, using HTML/CSS, JavaScript, and PHP, efficiently manages product inventory for the Central Police Canteen. It simplifies administration tasks and provide customers with an easy-to-use interface for browsing products and placing orders.
 
 "
               ghLink="https://github.com/AR2905/Digital_inventory"
@@ -50,7 +50,7 @@ function Projects() {
               imgPath={WA}
               isBlog={false}
               title="Weather App"
-              description="This React weather app fetches real-time weather data from OpenWeatherMap, offering dynamic updates of temperature and background visuals tailored to user input and time of day, alongside responsive design which is integrated with Tailwind CSS and error handling."
+              description="This React weather app fetches real-time weather data from OpenWeatherMap, offering dynamic updates of temperature and background visuals tailored to user input and time of day, also it is responsive which is integrated with Tailwind CSS and error handling."
               ghLink="https://github.com/AR2905/weatherApp"
               demoLink="https://weather-app-alpha-peach-89.vercel.app/"
             />
@@ -62,8 +62,8 @@ function Projects() {
               isBlog={false}
               title="My Portfolio"
               description="This is a dynamic personal portfolio crafted with React, showcasing my skills, projects, certifications, and resume. It features a responsive design for seamless browsing across various devices."
-              ghLink="https://github.com/AR2905/AvR-Portfolio"
-              demoLink="https://avr-portfolio.vercel.app/"
+              ghLink="https://github.com/AR2905/AR_portfolio_"
+              demoLink="https://ar-portfolio-delta.vercel.app/"
             />
           </Col>
 
@@ -73,7 +73,7 @@ function Projects() {
               isBlog={false}
               title="Gym Landing Page"
               description="
-The gym landing page, crafted with HTML and CSS, features a sleek design for optimal user experience. Meticulous alignment, intuitive navigation, and concise content sections make it user-friendly."
+The gym landing page, crafted with HTML and CSS, features a sleek design for optimal user experience. Meticulous alignment, intuitive navigation, and concise content sections makes it user-friendly."
               ghLink="https://github.com/AR2905/Gym_LandingPage"
             />
           </Col>
@@ -94,7 +94,7 @@ The gym landing page, crafted with HTML and CSS, features a sleek design for opt
               isBlog={false}
               title="Temperature converter"
               description="This project involves creating a user interface for temperature conversion. Users can input temperatures in Fahrenheit or Celsius, select the unit,
-and press convert to display the converted temperature. Optionally, you can add Kelvin conversion for an extra challenge"
+and convert it to the required specifications. Optionally, you can add Kelvin conversion for an extra challenge"
               ghLink="https://github.com/AR2905/Temperature_Converter"
             />
           </Col>
