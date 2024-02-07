@@ -56,7 +56,7 @@ function Home2() {
               Passionate web developer dedicated
               in crafting dynamic and user-friendly digital experiences through{" "}
               <b className="purple">coding </b> and{" "}
-              <b className="purple">innovative design</b> .
+              <b className="purple">innovative designs.</b> 
               <br /> <br />
               Awaiting to apply my skills in building dynamic and responsive
               <i>
