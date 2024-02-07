@@ -8,17 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="bluey">Ashish Rathod </span>
+          Greetings, myself <span className="bluey">Ashish Rathod </span>
             from <span> Vadodara, Gujarat.</span>
             <br /><br />
-            I am currently pursuing my<span className="bluey"> 4<sup>th</sup> year </span>of B.tech in Computer science and enginnering from Parul University.
+            I am currently in my <span className="bluey"> final year, </span> Pursuing Bachelors in Computer science and enginnering from Parul University.
             <br />
             <br />
 
-            Passionate<span className="bluey">  web developer</span> dedicated to crafting dynamic and user-friendly digital experiences through innovative coding and design.
-            
-            <br />
-            <br />
             My Internships...
           </p>
           <ul>
