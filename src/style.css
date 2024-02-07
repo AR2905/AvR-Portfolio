@@ -419,6 +419,9 @@ html {
     padding-left: 15px;
   }
   
+  .home-about-social-links .social-icons{
+    padding-bottom: 15px;
+  } 
   .icon-colour {
     
     color: #0000ff !important;
