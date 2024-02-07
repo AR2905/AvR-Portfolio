@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { IoMdCall } from "react-icons/io";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
 
 function Footer() {
   let date = new Date();
@@ -41,16 +41,42 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
+        
+
             <li className="social-icons">
-              <a
-                href="https://www.instagram.com/ashish.rathod.2905/"
-                style={{ color: "white" }}
+                <a
+                  href="https://wa.me/916353546776"
+                  style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+                >
+                  <BsWhatsapp />
+                </a>
+              </li>
+              
+              <li className="social-icons">
+                <a
+                  href="mailto:ash.rd2905@gmail.com"
+                  style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                  <IoIosMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="tel:+919104029656"
+                  style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                  <IoMdCall />
+                </a>
+              </li>
+
+
+
           </ul>
         </Col>
       </Row>
