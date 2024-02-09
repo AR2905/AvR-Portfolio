@@ -63,7 +63,7 @@ function Projects() {
               title="My Portfolio"
               description="This is a dynamic personal portfolio crafted with React, showcasing my skills, projects, certifications, and resume. It features a responsive design for seamless browsing across various devices."
               ghLink="https://github.com/AR2905/AR_portfolio_"
-              demoLink="https://ar-portfolio-delta.vercel.app/"
+              demoLink="https://avr-portfolio.vercel.app/"
             />
           </Col>
 
