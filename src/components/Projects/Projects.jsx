@@ -74,8 +74,8 @@ function Projects() {
               title="Gym Landing Page"
               description="
 The gym landing page, crafted with HTML and CSS, features a sleek design for optimal user experience. Meticulous alignment, intuitive navigation, and concise content sections makes it user-friendly."
-              ghLink="https://github.com/AR2905/Gym_LandingPage"
-              demoLink="https://avr-gym.netlify.app/"
+              ghLink="https://github.com/AR2905/GYM"
+              demoLink="https://avr-gym.vercel.app/"
             />
           </Col>
 
