@@ -23,7 +23,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              MY <span className="purple"> Glimpse </span>
+              My <span className="purple"> Glimpse </span>
             </h1>
 
             <p className="home-about-body" style={{ textAlign: "justify" }}>
