@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
@@ -11,7 +10,7 @@ import TC from "../../Assets/Projects/TC.png";
 import Di from "../../Assets/Projects/DI.png";
 import WA from "../../Assets/Projects/Weather.png";
 import PF from "../../Assets/Projects/Portfolio.png";
-
+import ChatX from "../../Assets/Projects/chatx.png"
 
 function Projects() {
   return (
@@ -30,6 +29,17 @@ function Projects() {
               title="Secure file storage system"
               description="Secure storage system built with Pytho-Flask, Firebase, HTML/CSS/JS, is a webApp which is using hybrid cryptography algorithm (AES + DES) to store the confidential file securely, allow PDFs, Image, Audio and Video Files."
               ghLink="https://github.com/AR2905/Secure_Storage_System"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ChatX}
+              isBlog={false}
+              title="Real Time Chat App"
+              description="ChatX, A real time chat webApp, Made with MERN stack and it uses Socket.io(websocket) for real time features over one-on-one and group chat. stores credentials in encrypted form in mongoDb. Responsive design of this webApp made with ReactJs and Chakra-ui library, BackEnd made up with NodeJS + ExpresJs. "
+              ghLink="https://github.com/AR2905/RealTime-ChatApp"
+              demoLink="https://chatx-7yko.onrender.com/"
             />
           </Col>
 
