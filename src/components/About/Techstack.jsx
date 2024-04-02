@@ -11,10 +11,11 @@ import {
   SiFirebase,
   SiFlask ,
   SiMongodb ,
-  SiTailwindcss 
+  SiTailwindcss ,
+  SiExpress 
 } from "react-icons/si";
 
-import { FaHtml5, FaCss3Alt,FaBootstrap,FaFigma    } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt,FaBootstrap,FaFigma,FaNode     } from "react-icons/fa";
 
 function Techstack() {
   return (
@@ -47,6 +48,30 @@ function Techstack() {
         <DiReact />
         <p>React</p>
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <FaNode />
+        <p>NodeJs</p>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress />
+        <p>ExpressJs</p>
+      </Col>
+<Col xs={4} md={2} className="tech-icons">
+        <SiMongodb />
+        <p>MongoDB</p>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMysql  />
+        <p>MySql</p>
+      </Col>
+       <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+        <p>FireBase</p>
+      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
         <p>python</p>
@@ -55,23 +80,13 @@ function Techstack() {
         <SiFlask  />
         <p>Flask</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMongodb />
-        <p>MongoDB</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMysql  />
-        <p>MySql</p>
-      </Col>
+      
+      
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
         <p>Git</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-        <p>FireBase</p>
-      </Col>
-      
+     
       <Col xs={4} md={2} className="tech-icons">
         <FaFigma  />
         <p>Figma </p>
