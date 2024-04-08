@@ -892,4 +892,12 @@ html {
     }
   }
   
+  @media screen and (max-width: 426px) {
+    .tech-icons-mob{
+      width: 42% !important;
+    }
+  }
+  
+
+
   
