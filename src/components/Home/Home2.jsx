@@ -27,36 +27,40 @@ function Home2() {
             </h1>
 
             <p className="home-about-body" style={{ textAlign: "justify" }}>
-              Passion driven individual possessing a solid foundation in <b className="purple">Web develeopment</b> . 
+              Passion driven individual possessing a solid foundation in{" "}
+              <b className="purple">Web develeopment</b>
               <br />
-              <br />
+              <br />I am fluent in creating responsive UIs with
               
-              I am fluent in
-              <i>
-                <b className="purple"> {" "} HTML , CSS , BootStrap, JavaScript, Python-Flask Framework ; </b>
-              </i>
-              <br />
+                <b className="purple"> HTML, CSS, Bootstrap, </b>and{" "}
+                <b className="purple"> Tailwind CSS</b>
+                <br />
+                Additionally, I excel in modern web app development with
+                <b className="purple"> Javascript </b>
+                and
+                <b className="purple"> React JS </b>
+                <br></br>I am proficient in building scalable backend
+                applications using
+                <b className="purple"> Node Js </b> and{" "}
+                <b className="purple">Express Js</b>
+                <br />
+                Furthermore, I am knowledgeable in{" "}
+                <b className="purple"> MongoDb </b> and{" "}
+                <b className="purple"> SQL </b> for efficient data management.
               
-              Alongwith, I also practice
-              <b className="purple"> Modern javascript library </b>
-              and frameworks like
-              <b className="purple"> React JS </b>
-              for developing products. <b className="purple"></b>
               <br></br>
-              <br></br>
-              
-              I possess a <b className="purple">quick learning </b> ability,
+              <br></br>I possess a <b className="purple">quick learning </b>{" "}
+              ability,
               <b className="purple"> adaptability </b> and a{" "}
               <b className="purple">creative mindset, </b> making me a valuable
               asset to any organization that values innovation, collaboration,
               and continuous learning.
               <br />
               <br />
-              
-              Passionate web developer dedicated
-              in crafting dynamic and user-friendly digital experiences through{" "}
+              Passionate web developer dedicated in crafting dynamic and
+              user-friendly digital experiences through{" "}
               <b className="purple">coding </b> and{" "}
-              <b className="purple">innovative designs.</b> 
+              <b className="purple">innovative designs.</b>
               <br /> <br />
               Awaiting to apply my skills in building dynamic and responsive
               <i>
