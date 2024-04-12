@@ -33,16 +33,16 @@ function Home2() {
               <br />I am fluent in creating responsive UIs with
               
                 <b className="purple"> HTML, CSS, Bootstrap, </b>and{" "}
-                <b className="purple"> Tailwind CSS</b>
+                <b className="purple"> Tailwind CSS</b>.
                 <br />
                 Additionally, I excel in modern web app development with
                 <b className="purple"> Javascript </b>
                 and
-                <b className="purple"> React JS </b>
+                <b className="purple"> React JS </b>.
                 <br></br>I am proficient in building scalable backend
                 applications using
                 <b className="purple"> Node Js </b> and{" "}
-                <b className="purple">Express Js</b>
+                <b className="purple">Express Js</b>.
                 <br />
                 Furthermore, I am knowledgeable in{" "}
                 <b className="purple"> MongoDb </b> and{" "}
