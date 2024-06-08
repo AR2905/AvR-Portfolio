@@ -9,6 +9,8 @@ function Type() {
           "Web Developer",
           "React Developer",
           "FrontEnd Developer",
+          "Node Developer",
+          "BackEnd Developer",
           "MERN Developer",
           "Fullstack Developer"
         ],

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
@@ -14,12 +14,15 @@ import {
   SiTailwindcss ,
   SiExpress 
 } from "react-icons/si";
-
+import { FaWordpress,FaPhp } from "react-icons/fa6";
+// import {  } from "react-icons/fa6";
 import { FaHtml5, FaCss3Alt,FaBootstrap,FaFigma,FaNode     } from "react-icons/fa";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+
+    
       <Col xs={4} md={2} className="tech-icons tech-icons-mob">
         <FaHtml5 />
         <p>HTML</p>
@@ -58,6 +61,13 @@ function Techstack() {
         <SiExpress />
         <p>ExpressJs</p>
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
+      <FaPhp/>
+
+        <p>PHP</p>
+      </Col>
+
 <Col xs={4} md={2} className="tech-icons tech-icons-mob">
         <SiMongodb />
         <p>MongoDB</p>
@@ -91,6 +101,11 @@ function Techstack() {
         <FaFigma  />
         <p>Figma </p>
       </Col>
+      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
+      <FaWordpress/>
+        <p>Wordpress </p>
+      </Col>
+      
     </Row>
   );
 }
