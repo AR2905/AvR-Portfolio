@@ -11,6 +11,8 @@ import Di from "../../Assets/Projects/DI.png";
 import WA from "../../Assets/Projects/Weather.png";
 import PF from "../../Assets/Projects/Portfolio.png";
 import ChatX from "../../Assets/Projects/chatx.png"
+import Ecom from "../../Assets/Projects/Ecom.png"
+
 
 function Projects() {
   return (
@@ -22,12 +24,26 @@ function Projects() {
         </h1>
         <p style={{ color: "white" }}></p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ecom}
+              isBlog={false}
+              title="MERN-MART || ECommerce"
+              description="MERN-MART is a secure, full-stack eCommerce website built with the MERN stack, featuring Stripe for payments and JWT-based user authentication. The site offers a modern UI, robust state management, and an admin panel for managing products and orders."
+              ghLink="https://github.com/AR2905/E-commerce-"
+              demoLink="https://e-commerce-avr.vercel.app/"
+
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={SFS}
               isBlog={false}
               title="Secure file storage system"
-              description="Secure storage system built with Pytho-Flask, Firebase, HTML/CSS/JS, is a webApp which is using hybrid cryptography algorithm (AES + DES) to store the confidential file securely, allow PDFs, Image, Audio and Video Files."
+              description="Secure_Storage_System is a robust web app built with Python-Flask, Firebase, and HTML/CSS/JS, using hybrid encryption (AES + 3DES) for secure file storage. It supports various file types, features two-factor authentication, and ensures the confidentiality and integrity of stored files."
               ghLink="https://github.com/AR2905/Secure_Storage_System"
             />
           </Col>
@@ -36,24 +52,14 @@ function Projects() {
             <ProjectCard
               imgPath={ChatX}
               isBlog={false}
-              title="Real Time Chat App"
+              title="ChatX || Real Time Chat App"
               description="ChatX, A real time chat webApp, Made with MERN stack and it uses Socket.io(websocket) for real time features over one-on-one and group chat. stores credentials in encrypted form in mongoDb. Responsive design of this webApp made with ReactJs and Chakra-ui library, BackEnd made up with NodeJS + ExpresJs. "
               ghLink="https://github.com/AR2905/RealTime-ChatApp"
               demoLink="https://chatx-7yko.onrender.com/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Di}
-              isBlog={false}
-              title="Digital Inventory"
-              description="The CPC(Central Police Canteen) Inventory Management System, using HTML/CSS, JavaScript, and PHP, efficiently manages product inventory for the Central Police Canteen. It simplifies administration tasks and provide customers with an easy-to-use interface for browsing products and placing orders.
-
-"
-              ghLink="https://github.com/AR2905/Digital_inventory"
-            />
-          </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -88,7 +94,17 @@ The gym landing page, crafted with HTML and CSS, features a sleek design for opt
               demoLink="https://avr-gym.vercel.app/"
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Di}
+              isBlog={false}
+              title="Digital Inventory"
+              description="The CPC(Central Police Canteen) Inventory Management System, using HTML/CSS, JavaScript, and PHP, efficiently manages product inventory for the Central Police Canteen. It simplifies administration tasks and provide customers with an easy-to-use interface for browsing products and placing orders.
 
+"
+              ghLink="https://github.com/AR2905/Digital_inventory"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={SMSS}

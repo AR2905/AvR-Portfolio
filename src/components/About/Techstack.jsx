@@ -5,14 +5,16 @@ import {
   DiReact,
   DiPython,
   DiGit,
-  DiMysql 
+  DiMysql, 
+  DiJqueryLogo
 } from "react-icons/di";
 import {
   SiFirebase,
   SiFlask ,
   SiMongodb ,
   SiTailwindcss ,
-  SiExpress 
+  SiExpress, 
+  SiRedux
 } from "react-icons/si";
 import { FaWordpress,FaPhp } from "react-icons/fa6";
 // import {  } from "react-icons/fa6";
@@ -47,11 +49,24 @@ function Techstack() {
         <DiJavascript1 />
         <p>JavaScript</p>
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
+        <DiJqueryLogo />
+        <p>jQuery</p>
+      </Col>
+
       <Col xs={4} md={2} className="tech-icons tech-icons-mob">
         <DiReact />
         <p>React</p>
       </Col>
 
+      
+      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
+        <SiRedux />
+        <p>Redux Tookit</p>
+      </Col>
+
+      
       <Col xs={4} md={2} className="tech-icons tech-icons-mob">
         <FaNode />
         <p>NodeJs</p>
