@@ -13,7 +13,7 @@
   
   .skill-sorter-button {
     background-color: #626262;
-    z-index: 9000;
+    z-index: 1;
     color: black;
     border: none;
     padding: 8px 16px;
