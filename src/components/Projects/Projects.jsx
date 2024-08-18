@@ -29,7 +29,7 @@ function Projects() {
             <ProjectCard
               imgPath={Ecom}
               isBlog={false}
-              title="MERN-MART || ECommerce"
+              title="MERN-MART || eCommerce"
               description="MERN-MART is a secure, full-stack eCommerce website built with the MERN stack, featuring Stripe for payments and JWT-based user authentication. The site offers a modern UI, robust state management, and an admin panel for managing products and orders."
               ghLink="https://github.com/AR2905/E-commerce-"
               demoLink="https://e-commerce-avr.vercel.app/"

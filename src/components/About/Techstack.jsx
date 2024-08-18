@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 // import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
@@ -20,108 +22,52 @@ import { FaWordpress,FaPhp } from "react-icons/fa6";
 // import {  } from "react-icons/fa6";
 import { FaHtml5, FaCss3Alt,FaBootstrap,FaFigma,FaNode     } from "react-icons/fa";
 
-function Techstack() {
+function Techstack({SelSkills}) {
+  console.log(SelSkills);
+
+  const techStacks = {
+    Frontend: [
+      { icon: <FaHtml5 />, name: "HTML" },
+      { icon: <FaCss3Alt />, name: "CSS" },
+      { icon: <FaBootstrap />, name: "Bootstrap" },
+      { icon: <SiTailwindcss />, name: "TailWind" },
+      { icon: <DiJavascript1 />, name: "JavaScript" },
+      { icon: <DiJqueryLogo />, name: "jQuery" },
+      { icon: <DiReact />, name: "React" },
+      { icon: <SiRedux />, name: "Redux Toolkit" },
+    ],
+    Backend: [
+      { icon: <FaNode />, name: "NodeJs" },
+      { icon: <SiExpress />, name: "ExpressJs" },
+      { icon: <FaPhp />, name: "PHP" },
+      { icon: <SiFlask />, name: "Flask" },
+      { icon: <DiPython />, name: "Python" },
+    ],
+    Database: [
+      { icon: <SiMongodb />, name: "MongoDB" },
+      { icon: <DiMysql />, name: "MySQL" },
+      { icon: <SiFirebase />, name: "Firebase" },
+    ],
+    Other: [
+      { icon: <DiGit />, name: "Git" },
+      { icon: <FaFigma />, name: "Figma" },
+      { icon: <FaWordpress />, name: "Wordpress" },
+    ],
+  };
+
+  const filteredTech = SelSkills === 'All' 
+    ? Object.values(techStacks).flat() 
+    : techStacks[SelSkills];
+  
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-
-    
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <FaHtml5 />
-        <p>HTML</p>
+    {filteredTech.map((tech, index) => (
+      <Col xs={4} md={2} className="tech-icons tech-icons-mob" key={index}>
+        {tech.icon}
+        <p>{tech.name}</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <FaCss3Alt  />
-        <p>CSS</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <FaBootstrap  />
-        <p>BootStrap</p>
-      </Col>
-
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiTailwindcss   />
-        <p>TailWind</p>
-      </Col>
-
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiJavascript1 />
-        <p>JavaScript</p>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiJqueryLogo />
-        <p>jQuery</p>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiReact />
-        <p>React</p>
-      </Col>
-
-      
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiRedux />
-        <p>Redux Tookit</p>
-      </Col>
-
-      
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <FaNode />
-        <p>NodeJs</p>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiExpress />
-        <p>ExpressJs</p>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-      <FaPhp/>
-
-        <p>PHP</p>
-      </Col>
-
-<Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiMongodb />
-        <p>MongoDB</p>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiMysql  />
-        <p>MySql</p>
-      </Col>
-       <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiFirebase />
-        <p>FireBase</p>
-      </Col>
-      
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiPython />
-        <p>python</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <SiFlask  />
-        <p>Flask</p>
-      </Col>
-      
-      
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <DiGit />
-        <p>Git</p>
-      </Col>
-     
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-        <FaFigma  />
-        <p>Figma </p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons tech-icons-mob">
-      <FaWordpress/>
-        <p>Wordpress </p>
-      </Col>
-      
-    </Row>
+    ))}
+  </Row>
   );
 }
 

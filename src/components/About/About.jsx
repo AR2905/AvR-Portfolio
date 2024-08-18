@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Techstack from "./Techstack";
@@ -6,9 +7,13 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import fakeLp from "../../Assets/fakeAbout.png";
-
+import "./About.css"
 import AboutLazy from "./AboutPlaceHolder";
 function About() {
+  const skills = ['All' , 'Frontend', 'Backend','Database', 'Other'];
+  const [selectedSkill, setSelectedSkill] = useState("All")
+
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -39,13 +44,29 @@ function About() {
         <h1 className="project-heading">
            <strong className="bluex"> Tech Skills </strong>
         </h1>
+<div className="outer-box-skill-sorter">
+<div className="skill-sorter">
+        {skills.map((skill, index) => (
+        <button
+          key={index}
+          id={index}
+          className={`skill-sorter-button ${selectedSkill === skill ? 'active' : ''}`}
+          onClick={() => setSelectedSkill(skill)}
+        >
+          {skill}
+        </button>
+      ))}
+    </div>
+</div>
+        
 
-        <Techstack />
+        <Techstack SelSkills={selectedSkill} />
 
         <h1 className="project-heading">
           <strong className="bluex">Soft Skills</strong> 
         </h1>
         <Toolstack />
+
 
       </Container>
     </Container>

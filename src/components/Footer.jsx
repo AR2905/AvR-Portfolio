@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoMdCall } from "react-icons/io";
@@ -16,7 +17,7 @@ function Footer() {
           <h3>Ashish Rathod's Portfolio</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} AR</h3>
+          <h3>Copyright © {year} AVR</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

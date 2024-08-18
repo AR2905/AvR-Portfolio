@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
@@ -11,7 +13,7 @@ function AboutCard() {
           Greetings, myself <span className="bluey">Ashish Rathod </span>
             from <span> Vadodara, Gujarat.</span>
             <br /><br />
-            I am currently in my <span className="bluey"> final year, </span> Pursuing Bachelors in Computer science and enginnering from Parul University.
+            I have completed my <span className="bluey"> B.Tech. </span> in Computer science and enginnering from Parul University with an aggregate of <span className="bluey"> 8.3 CGPA</span>.
             <br />
             <br />
 

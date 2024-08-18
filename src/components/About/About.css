@@ -1,0 +1,62 @@
+.outer-box-skill-sorter{
+    display: grid;
+    place-items: center;
+}
+.skill-sorter {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .skill-sorter-button {
+    background-color: #626262;
+    z-index: 9000;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+
+  }
+
+  
+  .skill-sorter-button:hover {
+    background-color: #444;
+  }
+
+  
+  .skill-sorter-button.active {
+    border: 2px solid white;
+    background-color:#6a0dad;
+    color: #fff;
+  }
+ 
+
+  @media screen and (max-width : 539px ) {
+    .skill-sorter-button {
+        font-size: 12px;
+    padding: 6px 12px;
+    margin: 0 6px;
+    }
+  }
+
+  @media screen and (max-width : 445px ) {
+    .skill-sorter-button {
+
+    margin: 8px 6px;
+    }
+
+    .skill-sorter{
+        justify-content: center;
+
+    }
+  }
+  
+  
