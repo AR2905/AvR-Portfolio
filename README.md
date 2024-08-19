@@ -1,7 +1,10 @@
-# Portfolio
+# AVR-Portfolio
 
 This is my portfolio website created with **React**. 
-You can view the live version [here](https://avr-portfolio.vercel.app/).
+
+## Live Link
+
+You can view the live website here: [PORTFOLIO](https://avr-portfolio.vercel.app/)
 
 ## About
 
