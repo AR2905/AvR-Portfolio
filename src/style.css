@@ -900,4 +900,13 @@ html {
   
 
 
-  
+  .skillicon{
+    display: grid !important;
+    min-width: fit-content;
+    place-items: center !important;
+    padding-bottom: 0 !important;
+  }
+
+  .skillicon p {
+    margin-bottom: 0.5rem !important;
+  }

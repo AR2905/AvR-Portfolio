@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
@@ -21,20 +22,22 @@ function Toolstack() {
         <p className="skillName">Observation</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons skillicon">
-        <p className="skillName">Problem-solving</p>
+        <p className="skillName">Communication</p>
       </Col>
+     
       <Col xs={4} md={2} className="tech-icons skillicon">
         <p className="skillName">Time management</p>
       </Col>
-      <Col xs={4} md={2} className="tech-icons skillicon">
-        <p className="skillName">Communication</p>
-      </Col>
-      
       <Col xs={4} md={2} className="tech-icons skillicon">
         <p className="skillName">Life-long learning
 attitude
 </p>
       </Col>
+      <Col xs={4} md={2} className="tech-icons skillicon">
+        <p className="skillName">Problem solving</p>
+      </Col>
+      
+      
 
     </Row>
   );
