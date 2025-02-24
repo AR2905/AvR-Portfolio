@@ -23,48 +23,51 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              My <span className="purple"> Glimpse </span>
+              My <span className="intro-yellow"> Glimpse </span>
             </h1>
 
             <p className="home-about-body" style={{ textAlign: "justify" }}>
               Passion driven individual possessing a solid foundation in{" "}
-              <b className="purple">Web develeopment</b>
+              <b className="intro-yellow">Fullstack Web develeopment</b>
               <br />
               <br />I am fluent in creating responsive UIs with
-              
-                <b className="purple"> HTML, CSS, Bootstrap, </b>and{" "}
-                <b className="purple"> Tailwind CSS </b>.
-                <br />
-                Additionally, I excel in modern web app development with
-                <b className="purple"> Javascript </b>
-                and
-                <b className="purple"> React JS </b>.
-                <br></br>I am proficient in building scalable backend
-                applications using
-                <b className="purple"> Node Js </b> and{" "}
-                <b className="purple">Express Js </b>.
-                <br />
-                Furthermore, I am knowledgeable in{" "}
-                <b className="purple"> MongoDb </b> and{" "}
-                <b className="purple"> SQL </b> for efficient data management .
-              
+
+              <b className="intro-yellow"> HTML, CSS, Bootstrap, Tailwind CSS </b>and{" "}
+              <b className="intro-yellow"> Material UI </b>.
+              <br />
+              Additionally, I excel in modern web app development with
+              <b className="intro-yellow"> Javascript</b>
+              ,
+              <b className="intro-yellow"> React JS </b>
+              and
+              <b className="intro-yellow"> Next JS </b> .
+              <br></br>I am proficient in building scalable backend
+              applications using
+              <b className="intro-yellow"> Node Js </b> and{" "}
+              <b className="intro-yellow">Express Js </b>.
+              <br />
+              Furthermore, I am knowledgeable in{" "}
+              <b className="intro-yellow"> MongoDb</b>,
+              <b className="intro-yellow"> MySQL </b> and{" "}
+              <b className="intro-yellow"> PostgreSQL </b> for efficient data management and leverage <b className="intro-yellow">Prisma ORM</b> for seamless database interactions.
+
               <br></br>
-              <br></br>I possess a <b className="purple">quick learning </b>{" "}
+              <br></br>I possess a <b className="intro-yellow">quick learning </b>{" "}
               ability,
-              <b className="purple"> adaptability </b> and a{" "}
-              <b className="purple">creative mindset, </b> making me a valuable
+              <b className="intro-yellow"> adaptability </b> and a{" "}
+              <b className="intro-yellow">creative mindset</b>, making me a valuable
               asset to any organization that values innovation, collaboration,
               and continuous learning.
               <br />
               <br />
               Passionate web developer dedicated in crafting dynamic and
               user-friendly digital experiences through{" "}
-              <b className="purple">coding </b> and{" "}
-              <b className="purple">innovative designs.</b>
+              <b className="intro-yellow">coding </b> and{" "}
+              <b className="intro-yellow">innovative designs.</b>
               <br /> <br />
               Awaiting to apply my skills in building dynamic and responsive
               <i>
-                <b className="purple"> Web Applications. </b>
+                <b className="intro-yellow"> Web Applications. </b>
               </i>
             </p>
           </Col>
@@ -92,7 +95,7 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>
               {" "}
-              <span className="purple">Connect</span> Me
+              <span className="intro-yellow">Connect</span> Me
             </h1>
 
             <ul className="home-about-social-links">
