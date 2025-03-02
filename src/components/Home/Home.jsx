@@ -3,15 +3,25 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/boy.png";
 import myImgFake from "../../Assets/BGLOAD2.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
 import { FaAnglesDown } from "react-icons/fa6";
 import BackgroundImage from "../../Assets/bgx.jpg";
 import BackgroundLoad from "../../Assets/BGLOAD.svg";
 import "./Home.css"
+
+import { motion } from "framer-motion";
+
+const textVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: (i) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: 1.5 + i * 0.3, duration: 0.6, ease: "easeOut" },
+  }),
+};
+
 function Home() {
-  const scrollButtonRef = useRef(null);
 
   const [bgLoaded, setBgLoaded] = useState(false);
   const [personLoad, setPersonload] = useState(false);
@@ -29,31 +39,12 @@ function Home() {
     };
   }, []);
 
-  const scrollToBottom = () => {
-    if (scrollButtonRef.current) {
-      const introSection = document.getElementById("about");
-      const introSectionTop = introSection.offsetTop;
-      let desiredMargin = -80; // Default desired margin
 
-      if (window.innerWidth < 768) {
-        desiredMargin = 20; // Default desired margin
-      }
-      if (window.innerWidth >= 768 && window.innerWidth <= 992) {
-        desiredMargin = -40; // Default desired margin
-      }
-
-      const scrollTarget = introSectionTop - desiredMargin;
-      window.scrollTo({
-        top: scrollTarget,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <section>
       <Container
         fluid
-        className="home-section"
+        className="home-section overflow-x-hidden"
         id="home"
         style={{
           backgroundImage: bgLoaded
@@ -70,33 +61,41 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <motion.h1
+                custom={0}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                style={{ paddingBottom: 15 }}
+                className="heading"
+              >
                 Hey!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏽
                 </span>
-              </h1>
+              </motion.h1>
 
-              <h1 className="heading-name">
+              <motion.h1
+                custom={1}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                className="heading-name"
+              >
                 I'M
                 <strong className="main-name"> Ashish Rathod </strong>
-              </h1>
+              </motion.h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <motion.div
+                custom={2}
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                style={{ padding: 45, textAlign: "left" }}
+              >
                 <Type />
-                <button
-                  ref={scrollButtonRef}
-                  className="scrollbtn"
-                  onClick={scrollToBottom}
-                  style={{
-                    position: "relative",
-                    zIndex: "999",
-                    color: "white",
-                  }}
-                >
-                  <FaAnglesDown className="scroll-icon"></FaAnglesDown>
-                </button>
-              </div>
+
+              </motion.div>
             </Col>
 
             <Col
@@ -113,7 +112,7 @@ function Home() {
                   <img
                     src={myImg}
                     alt="home pic"
-                    className="img-fluid home-person-img"
+                    className="img-fluid home-person-img slide-in-right"
                     style={{
                       maxHeight: "450px",
                       marginLeft: "auto",
@@ -141,8 +140,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
-    </section>
+    </section >
   );
 }
 

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -10,6 +11,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -17,24 +19,66 @@ function NavBar() {
     } else {
       updateNavbar(false);
     }
+
+    // Get the section currently in view
+    const sections = ["home", "about", "projects", "certificates", "resume"];
+    let currentSection = "home";
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = section;
+        }
+      }
+    });
+
+    setActiveSection(currentSection);
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, []);
 
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      updateExpanded(false); // Close navbar on mobile after click
+      updateExpanded(false);
     }
+  };
+
+  // Animation variants
+  const logoVariant = {
+    hidden: { y: -100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { delay: 1, duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const navItemVariant = {
+    hidden: { y: -50, opacity: 0 },
+    visible: (i) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: 1.5 + i * 0.2, duration: 0.5, ease: "easeOut" },
+    }),
   };
 
   return (
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
       <Container>
-        <Navbar.Brand onClick={() => scrollToSection("home")} className="d-flex" style={{ cursor: "pointer" }}>
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
+        {/* Logo Animation */}
+        <motion.div variants={logoVariant} initial="hidden" animate="visible">
+          <Navbar.Brand onClick={() => scrollToSection("home")} className="d-flex" style={{ cursor: "pointer" }}>
+            <img src={logo} className="img-fluid logo" alt="brand" />
+          </Navbar.Brand>
+        </motion.div>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => updateExpanded(expand ? false : "expanded")}
@@ -43,37 +87,27 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection("home")}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection("about")}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection("projects")}>
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection("certificates")}>
-                <GrCertificate style={{ marginBottom: "2px" }} /> Certificates
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link onClick={() => scrollToSection("resume")}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
+            {[
+              { id: "home", icon: <AiOutlineHome />, text: "Home" },
+              { id: "about", icon: <AiOutlineUser />, text: "About" },
+              { id: "projects", icon: <AiOutlineFundProjectionScreen />, text: "Projects" },
+              { id: "certificates", icon: <GrCertificate />, text: "Certificates" },
+              { id: "resume", icon: <CgFileDocument />, text: "Resume" },
+            ].map((item, index) => (
+              <motion.div key={item.id} variants={navItemVariant} initial="hidden" animate="visible" custom={index}>
+                <Nav.Item>
+                  <Nav.Link
+                    onClick={() => scrollToSection(item.id)}
+                    className={activeSection === item.id ? "active" : ""}
+                  >
+                    {item.icon} {item.text}
+                  </Nav.Link>
+                </Nav.Item>
+              </motion.div>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>
