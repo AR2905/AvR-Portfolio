@@ -1,4 +1,4 @@
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect, lazy } from "react";
 import Pre from "./components/Pre";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -49,35 +49,25 @@ function App() {
         <Navbar />
         <ScrollToTop />
 
-        {/* Lazy-loaded sections with Suspense fallback */}
+        {/* Lazy-loaded sections without Suspense */}
         <section id="home" className="section">
-          <Suspense fallback={<div>Loading Home...</div>}>
-            {visibleSections["home"] && <Home />}
-          </Suspense>
+          {visibleSections["home"] && <Home />}
         </section>
 
         <section id="about" className="section">
-          <Suspense fallback={<div>Loading About...</div>}>
-            {visibleSections["about"] && <About />}
-          </Suspense>
+          {visibleSections["about"] && <About />}
         </section>
 
         <section id="projects" className="section">
-          <Suspense fallback={<div>Loading Projects...</div>}>
-            {visibleSections["projects"] && <Projects />}
-          </Suspense>
+          {visibleSections["projects"] && <Projects />}
         </section>
 
         <section id="certificates" className="section">
-          <Suspense fallback={<div>Loading Certificates...</div>}>
-            {visibleSections["certificates"] && <Certificate />}
-          </Suspense>
+          {visibleSections["certificates"] && <Certificate />}
         </section>
 
         <section id="resume" className="section">
-          <Suspense fallback={<div>Loading Resume...</div>}>
-            {visibleSections["resume"] && <Resume />}
-          </Suspense>
+          {visibleSections["resume"] && <Resume />}
         </section>
 
         <Footer />
